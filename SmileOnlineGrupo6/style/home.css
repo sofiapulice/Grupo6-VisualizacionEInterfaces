@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    color: #000000;
+    background-color: #76c9c0;
+    line-height: 1.6;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    background-color: #a5d3ce;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-cta {
+    padding: 15px 30px;
+    background-color: #6C5280;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 60px;
+}
+
+.btn-cta:hover {
+    background-color: #453551;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #deeaea;
+}
+
+.servicio, .especialista {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.foto-perfil{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.foto-consultorio{
+    width: 22%;
+    height: 22%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #6C5280; 
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #453551;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+p.text-muted {
+    color: #6c757d;
+}
+
+/* contacto*/ 
+
+.img-mapa{
+    margin-top: 30px;
+    width: 70%;
+    height: 70%;
+}
+
+/*preguntas / chatBot*/
+.faq-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background: #6C5280;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #f0f4f8;
+}
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #76c9c0;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 9999; 
+}
+
+.chatbot {
+    display: none;
+    position: fixed;
+    bottom: 80px;  
+    right: 20px;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 9999; 
+}
+
+.chatbot-header {
+    background-color: #6C5280;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-messages {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#chatInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+/*comentarioas*/
+.comentarios-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.comentario {
+    width: 23%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comentario p {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.comentario strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.section h2{
+margin-top: 20px;
+}
+
+.carousel-inner{
+    margin-top: 40px;
+}
+
+footer{
+    margin-top: 60px;
+}
+
+.section h2{
+    font-weight: bold;
+}

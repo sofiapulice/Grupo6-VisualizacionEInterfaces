@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Online</title>
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+   
+    <header>
+        <div class="header-container">
+            <a href="#home" class="nav-opcion"><img src="./imagenes/logo.PNG" alt="Smile Online Argentina" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#servicios" class="nav-opcion">Servicios</a></li>
+                    <li><a href="#contacto" class="nav-opcion">Contacto</a></li>
+                    <li><a href="#consultas" class="nav-opcion">Consultas</a></li>
+                    <li><a href="#" class="nav-opcion">Tips</a></li>
+                    <li><a href="#" class="nav-opcion">Mis Turnos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<section id="home" class="hero">
+        <div class="hero-text">
+            <h1>¡Bienvenido a Smile Online!</h1>
+            <p>Atención odontológica de primera clase para toda la familia. Cuida tu sonrisa con nosotros.</p>
+            <button onclick="location.href='#reservar-turno'" class="btn-cta">Reservar Turno</button>
+        </div>
+    </section>
+
+<!-- 
+<div class="mountain-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e0e0e0" fill-opacity="1" d="M0,192L48,165.3C96,139,192,85,288,64C384,43,480,53,576,80C672,107,768,149,864,149.3C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+</div>
+-->
+
+
+<div class="contenedor-servicios">
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+        <h2>Servicios</h2>
+        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="servicio text-center">
+                        <h3>Odontología General</h3>
+                        <br><br>
+                        <p>Cuidamos de tu salud bucal con el mejor equipo.</p>
+                        <br>
+                        <p>Realizamos desde limpiezas regulares hasta restauraciones</p> 
+                        <p>para mantener tus dientes y encías saludables.</p> 
+                        <br>
+                        <p>Contamos con tecnología avanzada para asegurar un tratamiento cómodo</p> 
+                        <p>y efectivo en cada visita.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="servicio text-center">
+                        <h3>Nuestro Consultorio</h3>
+                        <img src="./imagenes/consultorio.jpg" class="foto-consultorio" alt="Consultorio">
+                        <p>Un espacio moderno y acogedor para que te sientas cómodo en cada visita.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="servicio text-center">
+                        <h3>Ortodoncia</h3>
+                        <br><br>
+                        <p>Tratamientos de alineación dental avanzados para una sonrisa perfecta.</p>
+                        <br>
+                        <p>Ofrecemos desde brackets tradicionales hasta alineadores invisibles 
+                        <p>para mejorar la estética y funcionalidad de tu sonrisa.</p> 
+                        <br>
+                        <p>Nuestro equipo de especialistas te guiará en cada paso del proceso.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="servicio text-center">
+                        <h3>Estética Dental</h3>
+                        <br><br>
+                        <p>Mejora la apariencia de tu sonrisa con tratamientos personalizados.</p>
+                        <br>
+                        <p>Ofrecemos blanqueamientos dentales, carillas y contorno dental 
+                        <p>para darte la sonrisa que siempre has soñado.</p>
+                        <br>
+                        <p>Utilizamos materiales de alta calidad para lograr resultados duraderos y naturales.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="servicio text-center">
+                        <h3>Implantes Dentales</h3>
+                        <br><br>
+                        <p>Recupera la funcionalidad y estética de tu sonrisa 
+                        <p>con implantes de alta calidad.</p>
+                            <br>
+                        <p>Los implantes dentales son una solución permanente </p>
+                        <p>para piezas dentales perdidas, permitiéndote masticar y sonreír </p>
+                        <p>con confianza nuevamente.</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+<div class="contenedor-especialistas">
+    <!-- Especialistas -->
+    <section id="especialistas" class="section light-bg">
+        <h3>Nuestros Especialistas</h3>
+        <div id="carouselEspecialistas" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="especialista text-center">
+                        <img src="./imagenes/perfil4.jpg" class="foto-perfil" >
+                        <h3>Dra. Sofia Pulice</h3>
+                        <p>Especialista en Ortodoncia</p>
+                        <p class="text-muted">Más de 10 años de experiencia en tratamientos de alineación dental.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="especialista text-center">
+                        <img src="./imagenes/perfil1.jpg"  class="foto-perfil">
+                        <h3>Dra. Regina Sanchez</h3>
+                        <p>Especialista en Endodoncia</p>
+                        <p class="text-muted">Experta en tratamientos de conductos y cuidado de la pulpa dental.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="especialista text-center">
+                        <img src="./imagenes/perfil2.jpg" class="foto-perfil" >
+                        <h3>Dr. Juan Manuel Albino</h3>
+                        <p>Especialista en Periodoncista</p>
+                        <p class="text-muted">Especialista en encías.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="especialista text-center">
+                        <img src="./imagenes/perfil3.jpg"  class="foto-perfil"  >
+                        <h3>Dr. Martin de Oro</h3>
+                        <p>Cirujano dental</p>
+                        <p class="text-muted">Se epecializa en el tratamiento de las enfermedades orales de los dientes y la mandíbula.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEspecialistas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEspecialistas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+</div>
+
+<!-- cobertura medica -->
+
+</div>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Dirección: Florencio Varela</p>
+    <p>Email: smileonline@gmail.com</p>
+    <p>Teléfono: 11 1234-5678</p>
+    <img class="img-mapa" src="./imagenes/Mapa.PNG" alt="mapa SmileOnline">
+</section>
+
+<section id="consultas" class="section light-bg">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">¿Qué tipo de tratamientos odontológicos ofrecen?</button>
+            <div class="faq-answer">Ofrecemos una amplia gama de tratamientos, que incluyen odontología general, ortodoncia, estética dental, implantes dentales y más. Para conocer más detalles, consulta nuestra sección de Servicios.</div>
+        </div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+        <button class="faq-question">¿Realizan tratamientos para niños?</button>
+        <div class="faq-answer">Sí, nuestros especialistas en odontología pediátrica ofrecen cuidados dentales específicos para niños, adaptados a sus necesidades y edades.</div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+        <button class="faq-question">¿Necesito una consulta previa antes de reservar un tratamiento?</button>
+        <div class="faq-answer">En la mayoría de los casos, es recomendable realizar una consulta para evaluar el tratamiento adecuado. Puedes reservar una consulta en línea o llamarnos para más información.</div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+        <button class="faq-question">¿Cuánto duran los tratamientos de ortodoncia?</button>
+        <div class="faq-answer">La duración de los tratamientos de ortodoncia varía según el tipo de tratamiento elegido y la condición dental del paciente, pero por lo general puede durar entre 12 y 24 meses.</div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">¿Cómo reservo un turno?</button>
+            <div class="faq-answer">Puedes reservar un turno haciendo clic en "Reservar Turno" en la página principal, o presencialmente.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">¿Cuáles son los métodos de pago?</button>
+            <div class="faq-answer">Aceptamos tarjetas de crédito, débito y transferencias bancarias.</div>
+        </div>
+    </div>
+</section>
+
+<!-- BOTÓN CHATBOT -->
+<div class="chatbot-button" onclick="openChatbot()">💬 Chatbot</div>
+
+<!-- VENTANA DE CHATBOT -->
+<div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+        <h3>Asistente Virtual</h3>
+        <button onclick="closeChatbot()">✖</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+        <p>¡Hola! ¿En qué puedo ayudarte?</p>
+    </div>
+    <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." onkeydown="sendMessage(event)">
+</div>
+
+
+
+<!-- comentarios -->
+ 
+<section id="comentarios" class="section light-bg">
+    <h2>Comentarios de nuestros pacientes</h2>
+    <div id="carouselComentarios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="comentarios-row">
+                    <div class="comentario">
+                        <p>"Excelente atención, me sentí muy cómodo. ¡Recomiendo!"</p>
+                        <p><strong>Juan Pérez</strong></p>
+                    </div>
+                    <div class="comentario">
+                        <p>"El tratamiento fue rápido y efectivo. ¡Gracias!"</p>
+                        <p><strong>Ana García</strong></p>
+                    </div>
+                    <div class="comentario">
+                        <p>"Un servicio excepcional. Los recomiendo al 100%."</p>
+                        <p><strong>Pedro López</strong></p>
+                    </div>
+                    <div class="comentario">
+                        <p>"Muy buena experiencia, el equipo es muy profesional."</p>
+                        <p><strong>Laura Martínez</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="comentarios-row">
+                    <div class="comentario">
+                        <p>"Gracias por devolverme la sonrisa, todo salió perfecto."</p>
+                        <p><strong>Carlos Fernández</strong></p>
+                    </div>
+                    <div class="comentario">
+                        <p>"Una atención de calidad, totalmente recomendable."</p>
+                        <p><strong>Maria Gómez</strong></p>
+                    </div>
+                    <div class="comentario">
+                        <p>"El equipo fue muy amable y resolvieron todas mis dudas."</p>
+                        <p><strong>Juliana Ruiz</strong></p>
+                    </div>
+                    <div class="comentario">
+                        <p>"Gracias por el excelente servicio y trato cercano."</p>
+                        <p><strong>Roberto Álvarez</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselComentarios" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselComentarios" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Smile Online Argentina - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+
+<script src="./script/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
