@@ -11,25 +11,32 @@ body {
     line-height: 1.6;
 }
 
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #ffffff;
-    background-color: #a5d3ce;
-    text-align: center;
-    padding: 100px 20px;
+
+#home {
+    background-image: url('../imagenes/imagenhome.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 20px; 
+    color: rgb(0, 0, 0); 
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.hero-text {
+    max-width: 600px; 
+    margin: 0; 
+    text-align: left; 
+    font-size: 20px;
 }
 
+.hero-text h1,
 .hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    text-align: left; 
 }
 
 .btn-cta {
+    display: block;
+    margin: 20px 0 0 0;
+    text-align: left;
     padding: 15px 30px;
     background-color: #6C5280;
     color: #ffffff;
@@ -38,10 +45,31 @@ body {
     cursor: pointer;
     font-size: 1.1rem;
     margin-top: 60px;
+    transition: all 0.6s ease;
 }
 
 .btn-cta:hover {
     background-color: #453551;
+}
+.icono-servicio {
+    width: 70px; 
+    margin-bottom: 15px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.icono-servicio:hover {
+    opacity: 1;
+}
+
+.servicio {
+    padding: 20px;
+}
+
+.servicio h3 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #506f8f; 
 }
 
 .section {
@@ -88,13 +116,6 @@ p.text-muted {
     color: #6c757d;
 }
 
-/* contacto*/ 
-
-.img-mapa{
-    margin-top: 30px;
-    width: 70%;
-    height: 70%;
-}
 
 /*preguntas / chatBot*/
 .faq-container {
@@ -194,16 +215,17 @@ p.text-muted {
     font-weight: bold;
 }
 
+.estrellas i{
+    color: #FFD700;
+    border-color: #726207;
+}
+
 .section h2{
 margin-top: 20px;
 }
 
 .carousel-inner{
     margin-top: 40px;
-}
-
-footer{
-    margin-top: 60px;
 }
 
 .section h2{
