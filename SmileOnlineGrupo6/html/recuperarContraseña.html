@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña</title>
+    <link rel="stylesheet" href="../style/recuperar.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <form action="./iniciarSesion.html" method="POST">
+                <h1>Recuperar contraseña</h1>
+                <div class="input-box">
+                    <input type="text" placeholder=" nombre de usuario" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder=" email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="btn">
+                    <button class="enviar" type="buttonEnviar"> <a href="./iniciarSesion.html">Enviar</a></button>
+                    <button class="cancelar" type="buttonCancelar"><a href="./iniciarSesion.html">Cancelar</a></button>
+                </div>
+                <register class="inicio-link">
+                    <p>¿No tienes una cuenta? <a href="./registrar.html"> Registrar </a></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
