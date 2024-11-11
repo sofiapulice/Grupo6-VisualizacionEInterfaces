@@ -20,7 +20,29 @@
             <h4>Reservar turno</h4>
         </div>
 
-        <div>
+        <div class="pago-section container mt-3 d-flex justify-content-between align-items-center position-relative">
+            <div class="step d-flex flex-column align-items-center position-relative">
+              <div class="no-check"><p>1</p></div>
+              <p class="fw-bold">Servicio</p>
+            </div>
+        
+            <div class="step d-flex flex-column align-items-center position-relative">
+              <div class="check"><p>2</p></div>
+              <p class="fw-bold">Pago</p>
+            </div>
+        
+            <div class="step d-flex flex-column align-items-center position-relative">
+              <div class="no-check"><p>3</p></div>
+              <p class="fw-bold">Resumen</p>
+            </div>
+
+            <div class="step d-flex flex-column align-items-center position-relative">
+              <div class="no-check"><p>4</p></div>
+              <p class="fw-bold">Resumen</p>
+            </div>
+          </div>
+
+        <div class="div-form">
             <h3>Complete con sus datos personales:</h3>
             <form action="">
                 <div class="form-group">
@@ -30,6 +52,14 @@
                 <div class="form-group">
                     <label for="apellido" class="label-datos">Apellido:</label>
                     <input type="text" name="apellido" class="input-datos">
+                </div>
+                <div class="form-group">
+                    <label for="dni" class="label-datos">Dni:</label>
+                    <input type="number" name="dni" class="input-datos">
+                </div>
+                <div class="form-group">
+                    <label for="obra" class="label-datos">Obra Social:</label>
+                    <input type="text" name="obra" class="input-datos">
                 </div>
                 <div class="form-group">
                     <label for="email" class="label-datos">Email:</label>
@@ -42,8 +72,8 @@
         </div>
         
         <div class="botones">
-            <a href="" class="boton-volver">VOLVER</a> 
-            <a href="" class="boton-siguiente">SIGUIENTE</a> 
+            <a href="turnos.html" class="boton-volver">VOLVER</a> 
+            <a href="turnos3.html" class="boton-siguiente">SIGUIENTE</a> 
         </div>
     </form>
 

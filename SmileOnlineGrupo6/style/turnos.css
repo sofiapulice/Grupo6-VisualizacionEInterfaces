@@ -118,10 +118,17 @@ body{
     font-weight: 600;
 }
 
+.div-form h3{
+    margin-top: 60px;
+}
+
 form {
     max-width: 500px; 
-    margin: 0 auto; 
+    margin: 80px auto; 
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
 }
 
 .form-group {
@@ -178,12 +185,17 @@ h3 {
     gap: 20px; 
     flex-wrap: wrap;
 }
+
+.titulo-especialista{
+    margin-top: 40px;
+}
+
 .confirmacion{
     border: 1px solid #4CAF50; 
     border-radius: 10px; 
     padding: 40px;
     max-width: 600px;
-    margin: 20px auto; 
+    margin: 150px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
@@ -198,3 +210,63 @@ h3 {
     line-height: 1.6; 
     margin: 0;
 }
+
+.pago-section {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  
+  .pago-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .step {
+    position: relative;
+    text-align: center;
+  }
+  
+  
+  .check,
+  .no-check {
+    background-color: #6C5280;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .check {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  
+  .check p,
+  .no-check p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .no-check {
+    background-color: #e8edf7;
+  }
+  
+  .no-check p {
+    color: black;
+  }
+
+  @media (min-width: 1400px){
+    .container-turnos {
+        height: 140vh;
+    }
+  }

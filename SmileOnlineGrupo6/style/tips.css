@@ -19,16 +19,13 @@ body{
 }
 
 .container{
-    width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 2000px;
-    flex-wrap: wrap; 
-    justify-content: space-around;
     gap: 20px; 
 }
 
 .card{
-    width: 45%;
     margin: 20px 0;
     border-radius: 20px;
     overflow: hidden;
