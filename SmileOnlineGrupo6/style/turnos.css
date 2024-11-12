@@ -9,17 +9,29 @@
     height: 100vh;
     z-index: 1;
 }
-  .center {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    width: 60%; 
-    height: 80%; 
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%; 
+    max-width: 700px;
+    min-height: 300px; 
+    height: auto; 
     border: 1px solid #ffffff;
     border-radius: 10px;
     background-color: white;
-    z-index: 10; 
-  }
+    padding: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 10;
+    overflow: auto; 
+    position: absolute; 
+    top: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
   .container-especialidad{
     display: flex;
@@ -67,7 +79,7 @@ h4 {
     background-color: #6C5280; 
     height: 200px; 
     width: 100%; 
-    position: absolute; 
+    position: flex; 
     top: 0; 
     left: 0; 
     z-index: 1; 
@@ -107,6 +119,7 @@ body{
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .boton-siguiente {
@@ -116,19 +129,24 @@ body{
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
+    margin-top: 20px;
 }
 
-.div-form h3{
-    margin-top: 60px;
+.div-form h3 {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 form {
-    max-width: 500px; 
-    margin: 80px auto; 
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px
+    gap: 15px; 
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form-group {
@@ -138,18 +156,18 @@ form {
 .label-datos {
     display: block;
     margin-bottom: 5px; 
-    font-size: 20px;
+    font-size: 14px;
     color: #555;
 }
 
 
-.input-datos{
-    width: 100%; 
-    padding: 10px; 
-    font-size: 16px; 
-    border: 1px solid #ddd; 
+.input-datos {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
 h3 {
@@ -212,21 +230,17 @@ h3 {
 }
 
 .pago-section {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-  }
-  
-  .pago-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
   
   .step {
     position: relative;
+    flex: 1 1 100px;
     text-align: center;
+    margin: 10px;
   }
   
   
@@ -244,9 +258,9 @@ h3 {
   }
   
   .check {
-    width: 4rem;
-    height: 4rem;
-  }
+    width: 3.5rem;
+    height: 3.5rem;
+}
   
   
   .check p,
@@ -265,8 +279,41 @@ h3 {
     color: black;
   }
 
-  @media (min-width: 1400px){
-    .container-turnos {
-        height: 140vh;
+  @media (max-width: 768px) {
+    .botones {
+        flex-direction: column; 
+        gap: 10px;
     }
-  }
+}
+
+
+@media (max-width: 576px) {
+    .center {
+        padding: 10px; 
+    }
+
+    h4 {
+        font-size: 1rem; 
+    }
+
+    .logo-container img {
+        height: 60px; 
+    }
+
+    .div-form h3 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    .pago-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .botones {
+        margin: 10px 0;
+    }
+}
