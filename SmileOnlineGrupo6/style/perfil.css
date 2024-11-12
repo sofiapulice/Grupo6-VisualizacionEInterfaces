@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #000000;
+    background-color: #76c9c0;
+    line-height: 1.6;
+}
+
+
+.profile-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #B2E0D8, #6C5280);
+    color: #fff;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-right: 20px;
+}
+
+.profile-info h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.bio {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.edit-profile-btn {
+    background-color: #fff;
+    color: #6C5280;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #8f94fb;
+    color: #fff;
+}
+
+/* Estadísticas */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #6C5280;
+}
+
+.stat p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Contenido */
+.content-section {
+    padding: 20px;
+}
+
+.content-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.activity {
+    margin-bottom: 15px;
+}
+
+.activity h3 {
+    font-size: 1.2em;
+    color: #6C5280;
+    margin-bottom: 5px;
+}
+
+.activity a {
+    color: #6C5280;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.activity a:hover {
+    text-decoration: underline;
+}
+
+/* Botón flotante */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6C5280;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.floating-btn:hover {
+    background: #8f94fb;
+}
+
+
+.verdetalles{
+    font-size: 12px;
+    color: dimgray !important;
+}
+
+.turnotitulo{
+    margin-top: 25px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+
+    .stats-section {
+        flex-direction: column;
+    }
+
+    .stat {
+        margin-bottom: 10px;
+    }
+}
+
+
+.calendar-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.day {
+    font-weight: bold;
+    color: #4e54c8;
+    padding: 10px 0;
+}
+
+.date {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.date.turno {
+    background: #4e54c8;
+    color: #fff;
+    font-weight: bold;
+    border-color: #4e54c8;
+}
+
+.date.turno1 {
+    background: #B2E0D8;
+    color: #fff;
+    font-weight: bold;
+    border-color: #75d0c1;
+}
+
+.date:hover {
+    background: #7d7c7c4a;
+    border-color: #ccc;
+}
+
+.reference-box {
+    display: flex;
+    justify-content: start;
+}
+.reference-item {
+    display: flex;
+    align-items: center;
+}
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.celeste {
+    background-color: #75d0c1; 
+}
+.violeta {
+    background-color: #4e54c8; 
+}
+.calendar-grid .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #ddd;
+}
