@@ -19,8 +19,8 @@
             <nav>
                 <ul>
                     <li><a href="#servicios" class="nav-opcion">Servicios</a></li>
-                    <li><a href="#contacto" class="nav-opcion">Contacto</a></li>
                     <li><a href="#consultas" class="nav-opcion">Consultas</a></li>
+                    <li><a href="#contacto" class="nav-opcion">Contacto</a></li>
                     <li><a href="html/tips.html" class="nav-opcion">Tips</a></li>
                     <li><a href="html/perfil.html" class="nav-opcion">Perfil</a></li>
                 </ul>
@@ -50,51 +50,36 @@
     <!-- Servicios -->
     <section id="servicios" class="section">
         <h2>Servicios</h2>
-        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-    
-                <div class="carousel-item active">
-                    <div class="servicio text-center">
-                        <img src="./imagenes/implante.png" alt="Implantes dentales" class="icono-servicio">
-                        <h3>Implantes Dentales</h3>
-                        <p>Recupera la funcionalidad y estética de tu sonrisa con implantes de alta calidad.</p>
-                    </div>
-                </div>
-    
-                <div class="carousel-item">
-                    <div class="servicio text-center">
-                        <img src="./imagenes/tirantes.png" alt="Ortodoncia" class="icono-servicio">
-                        <h3>Ortodoncia</h3>
-                        <p>Tratamientos de alineación dental avanzados para una sonrisa perfecta.</p>
-                    </div>
-                </div>
-    
-                <div class="carousel-item">
-                    <div class="servicio text-center">
-                        <img src="./imagenes/rayos-x.png" alt="Diagnóstico por imágenes" class="icono-servicio">
-                        <h3>Diagnóstico por Imágenes</h3>
-                        <p>Realizamos diagnósticos precisos mediante tecnología avanzada.</p>
-                    </div>
-                </div>
-    
-                <div class="carousel-item">
-                    <div class="servicio text-center">
-                        <img src="./imagenes/diente-limpio.png" alt="Blanqueamiento dental" class="icono-servicio">
-                        <h3>Blanqueamiento Dental</h3>
-                        <p>Mejora la apariencia de tu sonrisa con un blanqueamiento dental profesional.</p>
-                    </div>
-                </div>
-    
+        <div class="servicios-grid">
+            
+            <!-- Servicio 1 -->
+            <div class="servicio text-center">
+                <img src="./imagenes/implante.png" alt="Implantes dentales" class="icono-servicio">
+                <h3>Implantes Dentales</h3>
+                <p>Recupera la funcionalidad y estética de tu sonrisa con implantes de alta calidad.</p>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="servicio text-center">
+                <img src="./imagenes/tirantes.png" alt="Ortodoncia" class="icono-servicio">
+                <h3>Ortodoncia</h3>
+                <p>Tratamientos de alineación dental avanzados para una sonrisa perfecta.</p>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="servicio text-center">
+                <img src="./imagenes/rayos-x.png" alt="Diagnóstico por imágenes" class="icono-servicio">
+                <h3>Diagnóstico por Imágenes</h3>
+                <p>Realizamos diagnósticos precisos mediante tecnología avanzada.</p>
+            </div>
+            
+            <!-- Servicio 4 -->
+            <div class="servicio text-center">
+                <img src="./imagenes/diente-limpio.png" alt="Blanqueamiento dental" class="icono-servicio">
+                <h3>Blanqueamiento Dental</h3>
+                <p>Mejora la apariencia de tu sonrisa con un blanqueamiento dental profesional.</p>
             </div>
     
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
         </div>
     </section>
 
@@ -153,21 +138,8 @@
     </section>
 </div>
 
-<!-- cobertura medica -->
 
 </div>
-
-<!-- CONTACTO -->
-<section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <p>Dirección: Florencio Varela 1903, B1754 San Justo, Provincia de Buenos Aires</p>
-    <p>Email: smileonline@gmail.com</p>
-    <p>Teléfono: 11 1234-5678</p>
-    <div class="mapa-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.364333972357!2d-58.56538012449688!3d-34.67075316104113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1731184062189!5m2!1ses!2sar" 
-        width="700" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</section>
 
 
 <!-- CONSULTAS -->
@@ -221,7 +193,17 @@
     <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." onkeydown="sendMessage(event)">
 </div>
 
-
+<!-- CONTACTO -->
+<section id="contacto" class="section">
+    <h2 class="contactoH2">Contacto</h2>
+    <p><i class="fas fa-map-marker-alt" style="color: #6C5280"></i> Florencio Varela 1903, B1754 San Justo, Provincia de Buenos Aires</p>
+    <p><i class="fas fa-envelope" style="color: #6C5280"></i> smileonline@gmail.com</p>
+    <p><i class="fas fa-phone" style="color: #6C5280"></i> 11 1234-5678</p>
+    <div class="mapa-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.364333972357!2d-58.56538012449688!3d-34.67075316104113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1731184062189!5m2!1ses!2sar" 
+        width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
 
 <!-- comentarios -->
  
