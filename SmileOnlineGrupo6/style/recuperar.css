@@ -117,3 +117,41 @@ body {
     cursor: pointer;
     text-decoration: underline;
   }
+
+  @media (max-width: 420px) {
+    body {
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .wrapper h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        height: 45px;
+        margin: 20px 0;
+    }
+
+    .input-box input {
+        font-size: 13px;
+    }
+
+    .btn {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .inicio-link,
+    .register-link {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+}

@@ -1,14 +1,13 @@
 body {
-   background-color: #a9cfcc;
+    background-color: #a9cfcc;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    min-height: 100vh;
     font-family: "Roboto", sans-serif;
-  }
+}
   .wrapper {
     width: 320px;
     background-color: #77618791;
@@ -130,3 +129,42 @@ body {
   a {
     color: #ffffff;
   }
+
+  @media (max-width: 420px) {
+    body {
+      padding: 0;
+      min-height: 100vh;
+  }
+
+  .wrapper {
+      width: 97%;
+      padding: 20px;
+      box-sizing: border-box;
+      align-items: center;
+  }
+    .wrapper h1 {
+        font-size: 26px; 
+    }
+
+    .wrapper .input-box {
+        height: 35px;
+        margin: 15px 0; 
+    }
+
+    .input-box input {
+        font-size: 13px; 
+    }
+
+    .wrapper .btn {
+        height: 40px; 
+        font-size: 14px; 
+    }
+
+    .wrapper .register-link,
+    .wrapper .inicio-link {
+        font-size: 13px; 
+        margin: 15px 0; 
+    }
+
+
+}
