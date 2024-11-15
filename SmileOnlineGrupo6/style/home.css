@@ -9,6 +9,14 @@ body {
     color: #000000;
     background-color: #76c9c0;
     line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    /* Esto evita que se genere un desbordamiento horizontal */
 }
 
 
@@ -17,24 +25,24 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 400px 20px; 
-    color: rgb(0, 0, 0); 
+    padding: 200px 30px;
+    color: rgb(0, 0, 0);
 }
 
 .hero-text {
-    max-width: 600px; 
-    margin: 0; 
-    margin-left: 150px;
+    max-width: 600px;
+    margin: 0;
+    margin-left: 100px;
     text-align: left;
 }
 
 .hero-text p {
-    text-align: left; 
-    font-size: 40px;
+    text-align: left;
+    font-size: 30px;
 }
 
 .hero-text h1 {
-    font-size: 70px; 
+    font-size: 45px;
     font-weight: 550;
     color: #6C5280;
 }
@@ -57,8 +65,9 @@ body {
 .btn-cta:hover {
     background-color: #453551;
 }
+
 .icono-servicio {
-    width: 70px; 
+    width: 70px;
     margin-bottom: 15px;
     opacity: 0.7;
     transition: opacity 0.3s ease;
@@ -77,20 +86,20 @@ body {
 
 .servicios-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     margin-top: 20px;
 }
 
 .servicio {
     background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 8px; 
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .icono-servicio {
-    width: 80px; 
+    width: 80px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -106,27 +115,28 @@ body {
     color: #666;
 }
 
-.servicio, .especialista {
+.servicio,
+.especialista {
     padding: 20px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.foto-perfil{
+.foto-perfil {
     width: 140px;
     height: 140px;
     border-radius: 50%;
 }
 
-.foto-consultorio{
+.foto-consultorio {
     width: 22%;
     height: 22%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #6C5280; 
+    background-color: #6C5280;
     border-radius: 50%;
 }
 
@@ -144,15 +154,21 @@ p.text-muted {
     color: #6c757d;
 }
 
-#servicios h2{
+#servicios h2 {
     margin-bottom: 35px;
 }
 
-#contacto h2{
+#contacto h2 {
     margin-bottom: 35px;
 }
 
-#consultas h2{
+.mapa-container iframe {
+
+    width: 950px;
+    height: 400px;
+}
+
+#consultas h2 {
     margin-bottom: 35px;
 }
 
@@ -162,6 +178,7 @@ p.text-muted {
     margin: auto;
     text-align: left;
 }
+
 .faq-item {
     margin-bottom: 10px;
 }
@@ -182,6 +199,7 @@ p.text-muted {
     padding: 10px;
     background: #f0f4f8;
 }
+
 .chatbot-button {
     position: fixed;
     bottom: 20px;
@@ -192,20 +210,24 @@ p.text-muted {
     border-radius: 50%;
     font-size: 1.5rem;
     cursor: pointer;
-    z-index: 9999; 
+    z-index: 9999;
+}
+
+.chatbot-button:hover {
+    background-color: #453551;
 }
 
 .chatbot {
     display: none;
     position: fixed;
-    bottom: 80px;  
+    bottom: 80px;
     right: 20px;
     width: 300px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    z-index: 9999; 
+    z-index: 9999;
 }
 
 .chatbot-header {
@@ -255,19 +277,218 @@ p.text-muted {
     font-weight: bold;
 }
 
-.estrellas i{
+.estrellas i {
     color: #FFD700;
     border-color: #726207;
 }
 
-.section h2{
-margin-top: 20px;
+.section h2 {
+    margin-top: 20px;
 }
 
-.carousel-inner{
+.carousel-inner {
     margin-top: 40px;
 }
 
-.section h2{
+.section h2 {
     font-weight: bold;
+}
+
+#servicios2 {
+    display: none;
+}
+
+#comentarios2 {
+    display: none;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1030px) {
+    #home {
+        padding: 180px 10px;
+    }
+
+    .mapa-container iframe {
+        width: 700px;
+    }
+
+    .hero-text {
+        max-width: 300px;
+        margin-left: 50px;
+    }
+
+    .hero-text p {
+        font-size: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .btn-cta {
+        padding: 15px 20px;
+        font-size: 1.4rem;
+    }
+
+    .icono-servicio {
+        width: 60px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    #home {
+        padding: 140px 100px;
+    }
+
+    .mapa-container iframe {
+        width: 500px;
+    }
+
+    .hero-text {
+        max-width: 200px;
+        margin-left: 5px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .btn-cta {
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+
+    .icono-servicio {
+        width: 50px;
+    }
+
+    .chatbot-button {
+        background-color: #76c9c0;
+    }
+
+    .chatbot-button:hover {
+        background-color: #5a948d;
+    }
+
+}
+
+@media (max-width: 490px) {
+    #servicios2 {
+        display: block;
+    }
+
+    #comentarios2 {
+        display: block;
+    }
+
+    #comentarios {
+        display: none;
+    }
+
+
+    #servicios {
+        display: none;
+    }
+
+    #home {
+        padding: 100px 20px;
+        background-position: center;
+    }
+
+
+    .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .btn-cta {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        margin-top: 20px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .chatbot {
+        width: 70%;
+        right: 5%;
+    }
+
+    .mapa-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .servicios-grid h3 {
+        font-size: 17px;
+    }
+
+    .servicios-grid p {
+        font-size: 12px;
+    }
+
+    .icono-servicio {
+        width: 40px;
+    }
+
+    .comentario {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comentario p {
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+
+    .comentario strong {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    #especialistas h3 {
+        font-size: 17px;
+    }
+
+    #especialistas p {
+        font-size: 14px;
+    }
+
+    #consultas .faq-item button{
+        font-size: 15px;
+    }
+
+    #consultas .faq-item div{
+        font-size: 13px;
+    }
+
+    #contacto p{
+        font-size: 14px;
+    }
+
+
 }
