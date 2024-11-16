@@ -52,7 +52,7 @@
     padding: 10px;
     border-radius: 7px;
     border-color: rgb(190, 190, 190);
-    width: 90%;
+    width: 100%;
     font-size: 15px;
     margin-bottom: 30px;
 }
@@ -203,15 +203,21 @@ h3 {
 
 
 .card.selected {
-    border: 3px solid #453551;
+    border: 3px solid #6C5280;
 }
+
+.date.turno.selected {
+    background-color: #6C5280;
+    color: rgb(255, 255, 255);
+}
+
 
 .card {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    background-color: #453551; 
+    background-color: #6C5280; 
     color: #fff; 
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
@@ -228,7 +234,7 @@ h3 {
 
 
 .titulo-especialista{
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 22px !important;
 }
 
@@ -237,9 +243,8 @@ h3 {
     border-radius: 10px; 
     padding: 40px;
     max-width: 600px;
-    margin: 150px auto;
+    margin: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 40px; 
 }
 
 .confirmacion h3 {
