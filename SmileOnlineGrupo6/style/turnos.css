@@ -342,3 +342,84 @@ h3 {
         margin: 10px 0;
     }
 }
+
+.calendar-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.day {
+    font-weight: bold;
+    color: #4e54c8;
+    padding: 10px 0;
+}
+
+.date {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.date.turno {
+    background: #4e54c8;
+    color: #fff;
+    font-weight: bold;
+    border-color: #4e54c8;
+}
+
+.date.turno1 {
+    background: rgb(227, 224, 224);
+    color: #fff;
+    font-weight: bold;
+    border-color: #75d0c1;
+}
+
+.date:hover {
+    background: #7d7c7c4a;
+    border-color: #ccc;
+}
+
+.reference-box {
+    display: flex;
+    justify-content: start;
+}
+.reference-item {
+    display: flex;
+    align-items: center;
+}
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.celeste {
+    background-color: #75d0c1; 
+}
+.violeta {
+    background-color: #4e54c8; 
+}
+.calendar-grid .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #ddd;
+}
