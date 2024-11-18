@@ -63,7 +63,7 @@ html {
 }
 
 .btn-cta:hover {
-    background-color: #453551;
+    background-color: #76c9c0;
 }
 
 .icono-servicio {
@@ -163,9 +163,9 @@ p.text-muted {
 }
 
 .mapa-container iframe {
-
-    width: 950px;
-    height: 400px;
+    margin-top: 30px;
+    width: 90%;
+    height: 450px;
 }
 
 #consultas h2 {
@@ -174,7 +174,7 @@ p.text-muted {
 
 /*preguntas / chatBot*/
 .faq-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     text-align: left;
 }

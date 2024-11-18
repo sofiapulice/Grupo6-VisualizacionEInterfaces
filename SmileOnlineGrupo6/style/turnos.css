@@ -203,7 +203,8 @@ h3 {
 
 
 .card.selected {
-    border: 3px solid #6C5280;
+    background-color: #6C5280;
+    color: white;
 }
 
 .date.turno.selected {

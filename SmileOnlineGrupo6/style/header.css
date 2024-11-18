@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -24,6 +25,11 @@ header {
 
 .header-nav-opcion {
     font-weight: bold !important;
+    color: #6C5280 !important;
+    transition: all 0.6s ease;
+}
+
+.header-nav-opcion:hover {
     color: #76c9c0 !important;
 }
 
@@ -31,11 +37,19 @@ header {
     height: 60px;
 }
 
+.perfil {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 50px; /* Asegúrate de que la imagen sea cuadrada */
+    border-radius: 50%; /* Hace que la imagen sea redondeada */
+    border: 2px solid #6C5280;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     margin-top: 12px;
+    align-items: center;
 }
 
 nav a {
@@ -43,18 +57,19 @@ nav a {
     color: #333333;
     font-weight: 500;
     font-size: 20px;
+    align-items: center; 
 }
 
 .nav-opcion{
     font-weight: bold;
-    color: #76c9c0;
+    color: #6C5280;
     transition: all 0.6s ease;
 }
 
 
 
 .nav-opcion:hover{
-    color: #6C5280;
+    color: #76c9c0;
 }
 
 .menu-toggle {
