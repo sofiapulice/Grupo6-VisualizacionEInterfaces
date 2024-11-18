@@ -38,10 +38,15 @@ header {
 }
 
 .perfil {
-    width: 50px; /* Ajusta el tamaño de la imagen */
-    height: 50px; /* Asegúrate de que la imagen sea cuadrada */
-    border-radius: 50%; /* Hace que la imagen sea redondeada */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
     border: 2px solid #6C5280;
+}
+
+.perfil:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;  
 }
 
 nav ul {
