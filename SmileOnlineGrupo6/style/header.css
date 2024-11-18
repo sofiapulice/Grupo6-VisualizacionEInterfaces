@@ -82,8 +82,12 @@ nav a {
     background: none;
     border: none;
     font-size: 28px;
-    color: #76c9c0;
+    color: #6C5280;
     cursor: pointer;
+}
+
+.menu-toggle:hover {
+    color: #76c9c0;
 }
 
 
