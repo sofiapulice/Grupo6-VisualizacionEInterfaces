@@ -230,7 +230,7 @@ h3 {
     gap: 20px; 
     flex-wrap: wrap;
     cursor: pointer; 
-    transition: background-color 0.3s ease; /* Aquí no necesitas cambiar nada si solo estás manejando el hover en .card */
+    transition: background-color 0.3s ease;
 }
 
 
