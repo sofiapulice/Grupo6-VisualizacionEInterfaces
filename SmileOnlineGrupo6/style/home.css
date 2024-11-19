@@ -16,7 +16,6 @@ body {
 html {
     width: 100%;
     overflow-x: hidden;
-    /* Esto evita que se genere un desbordamiento horizontal */
 }
 
 

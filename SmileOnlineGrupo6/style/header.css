@@ -33,9 +33,18 @@ header {
     color: #76c9c0 !important;
 }
 
-.header-logo{
-    height: 60px;
+.header-logo {
+    height: 80px; 
+    max-height: 100px; 
+    width: auto; 
+    margin-right: 20px; 
+    transition: transform 0.3s ease-in-out; 
 }
+
+.header-logo:hover {
+    transform: scale(1.1); 
+}
+
 
 .perfil {
     width: 50px; 

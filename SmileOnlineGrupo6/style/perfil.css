@@ -9,6 +9,14 @@ body {
     color: #000000;
     background-color: #76c9c0;
     line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    
 }
 
 
@@ -118,7 +126,7 @@ body {
     text-decoration: underline;
 }
 
-/* Botón flotante */
+
 .floating-btn {
     position: fixed;
     bottom: 20px;
@@ -152,7 +160,7 @@ body {
     margin-top: 25px;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
     .profile-header {
         flex-direction: column;
